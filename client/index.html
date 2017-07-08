@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--CMF-->
+<html lang="en" ng-app="AngularBlog"> <!-- WEEK 5/DAY20/SLIDE 5-->
+<head>
+    <base href="/"> <!--WEEK 5/ DAY 22/ SLIDE 6 THIS SHITS GOTTA BE THE FIRST LINE OF YOUR HEADER OR YOU'LL BE CURSED WITH 18YEARS OF BAD CODING --> 
+    <meta charset="UTF-8">
+    <meta name="fragment" content="!"><!--WEEK 6/DAY 29/SLIDE 17 -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>blogger</title>
+<!--****Week 6 DAY 29 /Slide 5-->
+    <title>{{ seo.title }}</title>
+<meta property="og:title" content="{{ seo.title }}">
+<meta property="twitter:title" content="{{seo.title}}">
+<meta property="og:image" content="{{ seo.image }}">
+<meta property="twitter:image" content="{{seo.image}}">
+<meta property="og:url" content="{{ seo.url }}">
+<meta property="twitter:url" content="{{ seo.url }}">
+<meta property="description" content="{{seo.description}}">
+
+</head>
+
+<body ng-view>
+
+    <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-resource.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+
+    <!--IF YOU DONT IMPORT THESE, YOU'RE GONNA HAVE A BAD TIME -->
+    <script src="./app.js"></script>
+    <script src="./controller.js"></script>
+    <script src="./factories.js"></script>
+    <script src="./services.js"></script>
+    <script src="./directives.js"></script>
+</body>
+</html>

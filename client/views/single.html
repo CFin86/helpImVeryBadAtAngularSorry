@@ -1,0 +1,15 @@
+
+{{posts.title}}
+
+<h5>Posted By {{posts.authorfirstname}} {{posts.authorlastname}} </h5>
+
+<h5>Posted In {{posts.categoryname}} {{posts.createdAt | date:'short'}} </h5>
+{{posts.content}}
+<br>
+<br>
+
+<button ng-click="deletePost()"> DELETE </button>
+<br>
+<br>
+<a ng-href="/{{post.id}}/update"><button>Edit</button></a>
+</div>

@@ -1,0 +1,16 @@
+<!--:id/update-->
+<!--SingleController-->
+
+<div class="pages">
+<input type="text" id=titlebox placeholder="title" ng-model="post.title">
+<div>
+    <select ng-model="post.categoryid">
+        <option value="">Select Category</option>
+        <option value="{{ cat.id }}" ng-repeat="cat in categories">{{ cat.name }}</option>
+    </select>  
+     
+</div>
+
+<textarea maxlength="5000" ng-model="post.content"></textarea>
+<button ng-click="updatePost()">Update</button>
+</div>

@@ -1,0 +1,17 @@
+
+
+<h1>Compose a new Post</h1>
+<hr>
+<input type="text" ng-model="title" placeholder="Title">
+<br>
+<select ng-model="categoryId">
+    <option ng-repeat="cat in categories" value="{{cat.id}}" placeholder="Categories">{{cat.name}}</option>
+</select>
+<br>
+<select ng-model="userId">
+    <option ng-repeat="user in users" value="{{user.id}}">{{user.firstname}}</option>
+</select>
+<br>
+<textarea ng-model="content" cols="30" rows="10" placeholder="blog content goes here"></textarea>
+<br>
+<button ng-click="createPost()">Create Post!</button>

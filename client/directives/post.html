@@ -1,0 +1,10 @@
+ <!--//week 6/ day 27/ slide 21 DIRECTIVES ARE BEST USED FOR HEADERS AND FOOTERS-->
+    <h3>{{post.title}}</h3>
+    <button ng-click="compose()">Compose</button>
+    <h5>{{post.categoryname}}</h5>
+    {{post.userid}}
+    <a ng-href="/user">{{post.authorfirstname}} {{post.authorlastname}}</a>
+    <h5>    {{post.createdAt| date: 'medium' }} </h5>
+    {{post.id}}
+    <a ng-href="/{{post.id}}">Read</a> <button ng-click="logout()">Log out</button><!--THIS FUNCTION CORRESPONDS AT CONTROLLER.JS LINE -->
+                    <!--THIS HREF IS TALKED ABOUT ON WEEK 5/ DAY 22/ SLIDE 16 -->
